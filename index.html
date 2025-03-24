@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>Guessing The Number</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+  </head>
+
+  <body>
+
+      <h1 class="title">The 4th digit is </h1>
+
+      <h1 id="Tricks"></h1>
+
+      <script>
+				alert("Think of a 4 digit number")
+
+alert("Now subtract all the digits from the number u thought. For example: if u thought 1908, subtact 1, 9, 0 and 8 from the 1908. Now remember the number that u for after subtracting. Here the number will be 1990.")
+
+alert("Now, Provide any 3 digit from the number that u got after subtraction one by one. I will determine the 4th digit.")
+
+a = prompt("Enter 1st number: ")
+
+b = prompt("Enter 2nd number: ")
+
+c = prompt("Enter 3rd number: ")
+
+sum = parseInt(a)+parseInt(b)+parseInt(c)
+
+rem = sum%9
+
+answer= 9-rem
+
+
+
+function Trick() {
+
+	document.getElementById('Tricks').innerHTML = answer;
+
+}
+
+Trick();
+			</script>
+
+  </body>
+
+</html>
